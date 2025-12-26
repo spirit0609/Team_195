@@ -13,7 +13,7 @@ const ApiKeyInput: React.FC<ApiKeyInputProps> = ({ onSave, initialKey = '' }) =>
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!key.trim()) {
-            setError('APIキーを入力してください');
+            setError('APIキーを入力してください (gemini)');
             return;
         }
         // Basic validation (optional, can be improved)
